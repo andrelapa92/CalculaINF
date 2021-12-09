@@ -1,0 +1,132 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'calc2oXnwiJ.ui'
+##
+## Created by: Qt User Interface Compiler version 5.15.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.setWindowModality(Qt.NonModal)
+        MainWindow.setEnabled(True)
+        MainWindow.resize(340, 400)
+        sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
+        MainWindow.setSizePolicy(sizePolicy)
+        MainWindow.setMinimumSize(QSize(340, 400))
+        MainWindow.setMaximumSize(QSize(340, 400))
+        icon = QIcon()
+        icon.addFile(u"Ilha.ico", QSize(), QIcon.Normal, QIcon.Off)
+        MainWindow.setWindowIcon(icon)
+        MainWindow.setAutoFillBackground(False)
+        MainWindow.setStyleSheet(u"")
+        MainWindow.setToolButtonStyle(Qt.ToolButtonIconOnly)
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.label = QLabel(self.centralwidget)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(50, 10, 241, 81))
+        font = QFont()
+        font.setPointSize(13)
+        self.label.setFont(font)
+        self.label.setAcceptDrops(False)
+        self.label.setScaledContents(False)
+        self.label.setAlignment(Qt.AlignCenter)
+        self.label.setWordWrap(True)
+        self.dateEdit = QDateEdit(self.centralwidget)
+        self.dateEdit.setObjectName(u"dateEdit")
+        self.dateEdit.setGeometry(QRect(60, 209, 121, 31))
+        font1 = QFont()
+        font1.setPointSize(15)
+        self.dateEdit.setFont(font1)
+        self.dateEdit.setAlignment(Qt.AlignCenter)
+        self.dateEdit.setButtonSymbols(QAbstractSpinBox.NoButtons)
+        self.dateEdit.setDateTime(QDateTime(QDate(2020, 1, 1), QTime(0, 0, 0)))
+        self.dateEdit.setMaximumDateTime(QDateTime(QDate(2500, 12, 31), QTime(23, 59, 59)))
+        self.dateEdit.setMinimumDateTime(QDateTime(QDate(1950, 1, 1), QTime(0, 0, 0)))
+        self.spinBox = QSpinBox(self.centralwidget)
+        self.spinBox.setObjectName(u"spinBox")
+        self.spinBox.setGeometry(QRect(60, 119, 71, 41))
+        self.spinBox.setFont(font1)
+        self.spinBox.setMinimum(2000)
+        self.spinBox.setMaximum(2500)
+        self.spinBox.setValue(2022)
+        self.pushButton = QPushButton(self.centralwidget)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(190, 209, 91, 31))
+        self.pushButton.setTabletTracking(False)
+        self.pushButton.setText(u"Calcular")
+#if QT_CONFIG(shortcut)
+        self.pushButton.setShortcut(u"Return")
+#endif // QT_CONFIG(shortcut)
+        self.label_2 = QLabel(self.centralwidget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(60, 179, 481, 31))
+        sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
+        self.label_2.setSizePolicy(sizePolicy)
+        self.label_2.setFont(font)
+        self.label_3 = QLabel(self.centralwidget)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(60, 89, 481, 31))
+        self.label_3.setFont(font)
+        self.listWidget = QListWidget(self.centralwidget)
+        self.listWidget.setObjectName(u"listWidget")
+        self.listWidget.setGeometry(QRect(40, 310, 261, 61))
+        sizePolicy.setHeightForWidth(self.listWidget.sizePolicy().hasHeightForWidth())
+        self.listWidget.setSizePolicy(sizePolicy)
+        font2 = QFont()
+        font2.setFamily(u"MS Shell Dlg 2")
+        font2.setPointSize(16)
+        font2.setBold(False)
+        font2.setItalic(False)
+        font2.setWeight(9)
+        self.listWidget.setFont(font2)
+        self.listWidget.setStyleSheet(u"font: 75 16pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 0, 0);")
+        self.toolButton = QToolButton(self.centralwidget)
+        self.toolButton.setObjectName(u"toolButton")
+        self.toolButton.setGeometry(QRect(0, 0, 341, 20))
+        sizePolicy.setHeightForWidth(self.toolButton.sizePolicy().hasHeightForWidth())
+        self.toolButton.setSizePolicy(sizePolicy)
+        self.toolButton.setLayoutDirection(Qt.LeftToRight)
+        self.toolButton.setAutoFillBackground(False)
+        self.toolButton.setText(u"Configurar")
+        self.toolButton.setToolButtonStyle(Qt.ToolButtonTextOnly)
+        self.toolButton.setAutoRaise(False)
+        self.toolButton.setArrowType(Qt.NoArrow)
+        self.label_4 = QLabel(self.centralwidget)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(10, 259, 321, 31))
+        font3 = QFont()
+        font3.setPointSize(15)
+        font3.setBold(True)
+        font3.setWeight(75)
+        self.label_4.setFont(font3)
+        self.label_4.setAutoFillBackground(False)
+        self.label_4.setAlignment(Qt.AlignCenter)
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"CalculaINF", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Verifique a turma do Ensino Infantil indicada para o aluno.", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Data de nascimento do aluno:", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"AnoSemestre de refer\u00eancia:", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Calcule a idade do aluno...", None))
+    # retranslateUi
+
